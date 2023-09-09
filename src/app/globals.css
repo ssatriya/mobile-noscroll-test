@@ -16,12 +16,34 @@
   }
 }
 
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  overflow: hidden;
+  background: gray;
+}
+
+body,
+main {
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+  overflow-x: hidden;
+}
+
+html {
+  background: black;
+}
+
+main {
+  min-height: 100vh;
+  background: white;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
